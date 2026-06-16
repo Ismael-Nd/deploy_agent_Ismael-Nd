@@ -17,22 +17,17 @@ cleanup() {
     exit 1
 }
 
-## Ask the user for the project name suffix
 read -p "Enter a name for your project: " input
 
-# Build the full parent directory name
 PROJECT_DIR="attendance_tracker_${input}"
 
-# Register the trap: on SIGINT (Ctrl+C), run cleanup
 trap cleanup SIGINT
 
-# Handle the case where it already exists
 if [ -d "$PROJECT_DIR" ]; then
     echo "Error: '$PROJECT_DIR' already exists. Aborting."
     exit 1
 fi
 
-# -p makes parent folders as needed and won't error if they exist
 mkdir -p "$PROJECT_DIR/Helpers"
 mkdir -p "$PROJECT_DIR/reports"
 
@@ -43,7 +38,6 @@ cp config.json "$PROJECT_DIR/Helpers/"
 cp reports.log "$PROJECT_DIR/reports/"
 
 
-# Ask whether to change thresholds
 read -p "Do you want to update attendance thresholds? (y/n): " answer
 
 if [ "$answer" = "y" ]; then
