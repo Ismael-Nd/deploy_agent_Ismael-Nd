@@ -195,8 +195,8 @@ Before finishing, the script verifies that **Python 3** is available on your sys
 
 ---
 
-[![Watch the video to see the full setup](<img width="1250" height="596" alt="image" src="https://github.com/user-attachments/assets/ba2af4d2-c969-4d77-ad05-e03fff720951" />
-)](https://www.loom.com/share/173c600fe70f470c9ffc656929fc550d)
+[![Watch the video to see the full setup] <img width="1138" height="638" alt="image" src="https://github.com/user-attachments/assets/14133288-2fe4-4e73-a1a8-59f06f5a1752" />
+](https://www.loom.com/share/173c600fe70f470c9ffc656929fc550d)
 
 ## Author
 
